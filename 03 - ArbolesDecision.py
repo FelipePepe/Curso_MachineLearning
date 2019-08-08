@@ -33,7 +33,7 @@ plt.xlabel('Importancia de las características')
 plt.ylabel('Características')
 plt.show()
 
-arbol = DecisionTreeClassifier(max_depth=3)
+arbol = DecisionTreeClassifier(max_depth=2)
 
 arbol.fit(X_train, Y_train)
 
@@ -53,7 +53,7 @@ for pairidx, pair in enumerate ([[0, 1], [0, 2], [0, 3],
     Y = iris.target
 
     # Entrenar el algoritmo
-    clf = DecisionTreeClassifier(max_depth=1).fit(X, Y)
+    clf = DecisionTreeClassifier(max_depth=2).fit(X, Y)
 
     plt.subplot(2, 3, pairidx + 1)
 
